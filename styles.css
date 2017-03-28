@@ -1,0 +1,161 @@
+/* Google Fonts: 
+font-family: 'Titillium Web', sans-serif;
+font-family: 'Palanquin', sans-serif;
+font-family: 'Montaga', serif;*/
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    background-color: #000;
+}
+#home {
+    text-decoration: none;
+    float: left;
+    color: #b5b5b5;
+}
+h1{
+    font-size: 34px;
+}
+#jwp {
+    color:#fff;
+}
+
+h2 {
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    color: #b5b5b5;
+}
+
+section p {
+    text-align: justify;
+    padding-right: 4%;
+    color: #fff;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration:none;
+    text-transform: uppercase;
+    color: #b5b5b5;
+    font-family: 'Palanquin', sans-serif;
+    font-size: 18px;
+    margin: auto;
+    padding: 7px;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.clientForm {
+    padding: 15px;
+}
+
+input {
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px solid #b5b5b5;
+
+}
+
+/* images */
+
+#jeff {
+	width: 90%;
+}
+
+#background {
+    background-image: url("Photos/winterlaketahoe.jpg");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: cover;
+    background-size: cover;
+}
+/*
+background-image {
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: cover;
+    background-size: cover;
+
+}
+
+.first-image{
+    background-image: url("Photos/winterlaketahoe.jpg");
+   z-index: -3;
+}
+.second-image{
+background-image: url("Photos/mtdiablo.jpg");
+z-index: -2;
+}
+.third-image {
+background-image: url("Photos/fastm3.jpg");
+z-index: -1;
+}
+
+.toggle-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+}
+.first-image.show {
+    opacity: 1;
+}
+
+.second-image.show {
+    opacity: 1;
+}
+
+third-image.show {
+    opacity: 1;
+}
+
+*/
+
+#gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    margin: 40px 5px;
+}
+
+#cars, #nature, #weddings   {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+/* footer */
+
+footer {
+    font-family: 'Palanquin', sans-serif;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    color: #b5b5b5;
+}
+
+footer p{
+    margin: 0;
+    padding: 0;
+}
+
+footer a {
+    display: inline-block;
+    font-size: 24px;
+    color: #b5b5b5;
+    margin: auto;
+    padding: 0 7px;
+}
