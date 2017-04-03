@@ -28,6 +28,13 @@ h2 {
     color: #b5b5b5;
 }
 
+h3 {
+    text-align: left;
+    color: #b5b5b5;
+    font-size: 40px;
+    padding-left: 90px;
+}
+
 section p {
     text-align: justify;
     padding-right: 4%;
@@ -35,17 +42,28 @@ section p {
 }
 
 nav a {
-    display: inline-block;
+    display: inline;
     text-decoration:none;
     text-transform: uppercase;
     color: #b5b5b5;
     font-family: 'Palanquin', sans-serif;
     font-size: 18px;
-    margin: auto;
+    margin: 0 auto;
     padding: 7px;
+
+}
+a{
+    text-decoration: none;
+    color: #2e2e2e;
+}
+.dropdown {
+    display: none;
+    position: relative;
+    padding-left: 0;
+
 }
 
-#content {
+#aboutMe {
     display: flex;
     justify-content: center;
     margin: 0;
@@ -63,6 +81,28 @@ input {
     border: 1px solid #b5b5b5;
 
 }
+.modal-background {
+  padding: 40px;
+  background-color: rgba(0, 0, 0, .5);
+  position: fixed; 
+  top: 0px;
+  right:0px;
+  left: 0px;
+  bottom: 0px;
+  display:none;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.modal-content {
+  padding: 40px 20px;
+  color: #444;
+  background-color: white;
+  width: 60%;
+  margin: 0 auto;
+  display:none;
+}
 
 /* images */
 
@@ -70,81 +110,101 @@ input {
 	width: 90%;
 }
 
-#background {
-    background-image: url("Photos/winterlaketahoe.jpg");
-    background-repeat:no-repeat;
-    background-attachment: fixed;
-    background-position: cover;
-    background-size: cover;
-}
-/*
-background-image {
-    background-repeat:no-repeat;
-    background-attachment: fixed;
-    background-position: cover;
-    background-size: cover;
-
-}
-
-.first-image{
-    background-image: url("Photos/winterlaketahoe.jpg");
-   z-index: -3;
-}
-.second-image{
-background-image: url("Photos/mtdiablo.jpg");
-z-index: -2;
-}
-.third-image {
-background-image: url("Photos/fastm3.jpg");
-z-index: -1;
-}
-
-.toggle-image {
-    position: absolute;
+#img1, #img2, #img3 {
+    width:100%;
+    height:100%;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 800px;
-}
-.first-image.show {
-    opacity: 1;
-}
-
-.second-image.show {
-    opacity: 1;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0;
+    animation: 15s infinite;
+    animation-name: swap;
 }
 
-third-image.show {
-    opacity: 1;
+#img2 {
+    animation-delay: 5s;
+
 }
 
-*/
+#img3 {
+    animation-delay: 10s;
+}
 
-#gallery {
+#options {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: space-between;
     margin: 40px 5px;
 }
 
 #cars, #nature, #weddings   {
-    padding-left: 10px;
     padding-right: 10px;
 }
 
+.slideOver{
+    width: 400px;
+    height: 267px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
 
+}
+
+.carOverlay, .weddingOverlay, .natureOverlay {
+    width: 400px;
+    height: 268px;
+    background-color: rgba(181, 181, 181, .7);
+    font-size: 40px;
+    text-align: : center;
+    line-height: 267px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 1px;
+
+    animation: 2s infinite;
+    }
+
+.slideOver:hover .carOverlay{
+   transform: translateY(-102%);
+}
+.slideOver:hover .weddingOverlay{
+    transform: translateY(-102%);
+}
+.slideOver:hover .natureOverlay {
+    transform: translateY(-102%);
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    margin: 40px 5px;
+    overflow:scroll;
+/*    height:800px;
+    width: 2000;*/
+
+}
 
 /* footer */
 
 footer {
     font-family: 'Palanquin', sans-serif;
-    position: absolute;
     right: 0;
     bottom: 0;
     left: 0;
     padding: 1rem;
     color: #b5b5b5;
+    position: absolute;
+}
+.bottom{
+    position:relative;
 }
 
 footer p{
@@ -159,3 +219,20 @@ footer a {
     margin: auto;
     padding: 0 7px;
 }
+
+@keyframes swap {
+    0%{
+    opacity: 0;
+    }
+    20% {
+    opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    100%{
+    opacity: 0;
+    }
+}
+
+
