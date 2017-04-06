@@ -9,6 +9,8 @@
   <link href="../styles.css" type="text/css" rel="stylesheet">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
 </head> 
 <body>
   <header>
@@ -33,25 +35,44 @@
 
     <div class="gallery">
       <section>
-        <img src="../photos/bluefireworks.jpg" name="fireworks">
-        <img src="../photos/elk.jpg" name="elk">
-        <img src="../photos/bridges.jpg" name="bridge">
-        <img src="../photos/sky.jpg" name="sky">
-        <img src="../photos/yosemite.jpg" name="yosemite">
-        <img src="../photos/grandc.jpg" name="grandcanyon">
+        <img src="../photos/bluefireworks.jpg" alt="fireworks">
+        <img src="../photos/elk.jpg" alt="elk">
+        <img src="../photos/bridges.jpg" alt="bridge">
+        <img src="../photos/sky.jpg" alt="sky">
+        <img src="../photos/yosemite.jpg" alt="yosemite">
+        <img src="../photos/grandc.jpg" alt="grandcanyon">
       </section>
     </div>
 
-    <footer class="bottom">
-      <hr>
-      <p>Stay in touch!</p>
-      <a href="https://500px.com/jeffwyma" target="_blank"><i class="fa fa-500px" aria-hidden="true"></i></a>
-      <a href="https://www.flickr.com/photos/jeffrsx231/" target="_blank"><i class="fa fa-flickr" aria-hidden="true"></i></a>    
-      <a href="https://www.instagram.com/jeffw231" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-    </footer>
+    <div class="modal-background">
+      <div class="modal-content">
+        <form>
+         <button id="close">X</button>
+         <h3>Contact Me</h3>  
+         <div class="flexwrap">
+           <label for="name">Name:</label>
+           <input class="input" type="text" placeholder="Name"><br>
+           
+           <label for="email">Email Address:</label>
+           <input class="input" type="email" placeholder="Email Address">
+         </div>
+         <br>
+         <textarea name="comment" rows="6" placeholder="Speak At Me!"></textarea>
+         <input class="submit" type="submit">
+       </form>
+      </div>
+      </div>
+      
+       <footer>
+        <hr>
+        <p>Stay in touch!</p>
+        <a href="https://500px.com/jeffwyma" target="_blank"><i class="fa fa-500px" aria-hidden="true"></i></a>
+        <a href="https://www.flickr.com/photos/jeffrsx231/" target="_blank"><i class="fa fa-flickr" aria-hidden="true"></i></a>    
+        <a href="https://www.instagram.com/jeffw231" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </footer>
 
-    <script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
-    <script src="../javascript/main.js"></script>
+      <script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+      <script src="../javascript/main.js"></script>
 
-  </body>
-  </html>
+    </body>
+    </html>

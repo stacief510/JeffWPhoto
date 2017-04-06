@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Jeff Wyma</title>
-    
-    <link href="https://fonts.googleapis.com/css?family=Montaga|Palanquin|Titillium+Web" rel="stylesheet">
-    
-    <link href="../styles.css" type="text/css" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <title>Jeff Wyma</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Montaga|Palanquin|Titillium+Web" rel="stylesheet">
+  
+  <link href="../styles.css" type="text/css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
 </head> 
 <body>
   <header>
@@ -16,44 +19,62 @@
     <h1 id="jwp">Jeff Wyma Photography</h1>
     
     <nav>
-      
-        <a href="portfolio.html" class="portfolio">Portfolio</a>        
+
+      <a href="portfolio.html" class="portfolio">Portfolio</a>        
 		<!--  <ul class="dropdown">
           <li><a href="#">Cars</a></li>
           <li><a href="#">Weddings</a></li> 
           <li><a href="#">Nature</a></li>
         </ul>  -->
-      <a href="clients.html">Clients</a>
-      <a href="about.html">About</a>
-      <a href="#" id="showModal">Contact</a>
-    </nav>
-  </header>
+        <a href="clients.html">Clients</a>
+        <a href="about.html">About</a>
+        <a href="#" id="showModal">Contact</a>
+      </nav>
+    </header>
 
-      <h3>Automobiles</h3>
+    <h3>Automobiles</h3>
 
     <div class="gallery">
       <section>
-        <img src="../photos/sfcar.jpg" name="sfcar">
-        <img src="../photos/bmwtree.jpg" name="bmwtree">
-        <img src="../photos/brickandwhite.jpg" name="brickwhitecar">
-        <img src="../photos/nightwhite.jpg" name="nightcar">
-        <img src="../photos/porschelrg.jpg" name="porche">
-        <img src="../photos/twocars.jpg" name="twocars">
+        <img src="../photos/sfcar.jpg" alt="sfcar">
+        <img src="../photos/bmwtree.jpg" alt="bmwtree">
+        <img src="../photos/brickandwhite.jpg" alt="brickwhitecar">
+        <img src="../photos/nightwhite.jpg" alt="nightcar">
+        <img src="../photos/porschelrg.jpg" alt="porche">
+        <img src="../photos/twocars.jpg" alt="twocars">
       </section>
     </div>
-   
-  
-    <footer class="bottom">
-        <hr>
-        <p>Stay in touch!</p>
-        <a href="https://500px.com/jeffwyma" target="_blank"><i class="fa fa-500px" aria-hidden="true"></i></a>
-        <a href="https://www.flickr.com/photos/jeffrsx231/" target="_blank"><i class="fa fa-flickr" aria-hidden="true"></i></a>    
-        <a href="https://www.instagram.com/jeffw231" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-    </footer>
+    
+    <div class="modal-background">
+      <div class="modal-content">
+        <form>
+         <button id="close">X</button>
+         <h3>Contact Me</h3>  
+         <div class="flexwrap">
+           <label for="name">Name:</label>
+           <input class="input" type="text" placeholder="Name"><br>
+           
+           <label for="email">Email Address:</label>
+           <input class="input" type="email" placeholder="Email Address">
+         </div>
+         <br>
+         <textarea name="comment" rows="6" placeholder="Speak At Me!"></textarea>
+         <input class="submit" type="submit">
+       </form>
+     </div>
+   </div>
+
+   <footer>
+    <hr>
+    <p>Stay in touch!</p>
+    <a href="https://500px.com/jeffwyma" target="_blank"><i class="fa fa-500px" aria-hidden="true"></i></a>
+    <a href="https://www.flickr.com/photos/jeffrsx231/" target="_blank"><i class="fa fa-flickr" aria-hidden="true"></i></a>    
+    <a href="https://www.instagram.com/jeffw231" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+  </footer>
 
 
-        <script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
-    <script src="../javascript/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.js"  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+  <script src="../javascript/main.js"></script>
 
 
 </body>

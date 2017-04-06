@@ -9,6 +9,9 @@
   <link href="../styles.css" type="text/css" rel="stylesheet">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  
 </head> 
 <body>
   <header>
@@ -32,12 +35,12 @@
     <div id="options">
 
       <div class=slideOver>
-       <img src="../photos/porsche_400.jpg" title="cars" id="cars">
+       <img src="../photos/porsche_400.jpg" title="cars" id="cars" alt="cars">
        <div class="carOverlay"><a href="../views/cars.html">Cars</a></div>
      </div>
 
      <div class=slideOver>
-       <img src="../photos/mrandmrs_400.jpg" title="weddings" id="weddings">
+       <img src="../photos/mrandmrs_400.jpg" title="weddings" id="weddings" alt="weddings">
        <div class="weddingOverlay"><a href="../views/weddings.html">Weddings</a></div>
      </div>
 
@@ -51,29 +54,32 @@
    <div class="modal-background">
     <div class="modal-content">
       <form>
-        <h3>Contact Me</h3>  
-        <label for="name">Name</label>
-        <input type="text" placeholder="Name">
-        <label for="email">Email Address</label>
-        <input type="email" placeholder="Email Address">
-        <textarea name="comment">Speak At Me!</textarea>
-      </form>
+       <button id="close">X</button>
+       <h3>Contact Me</h3>  
+       <div class="flexwrap">
+         <label for="name">Name:</label>
+         <input class="input" type="text" placeholder="Name"><br>
+         
+         <label for="email">Email Address:</label>
+         <input class="input" type="email" placeholder="Email Address">
+       </div>
+       <br>
+       <textarea name="comment" rows="6" placeholder="Speak At Me!"></textarea>
+       <input class="submit" type="submit">
+     </form>
+   </div>
+ </div>
+ <footer class="bottom">
+  <hr>
+  <p>Stay in touch!</p>
+  <a href="https://500px.com/jeffwyma" target="_blank"><i class="fa fa-500px" aria-hidden="true"></i></a>
+  <a href="https://www.flickr.com/photos/jeffrsx231/" target="_blank"><i class="fa fa-flickr" aria-hidden="true"></i></a>    
+  <a href="https://www.instagram.com/jeffw231" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+</footer>
 
-      <button id="close">Close</button>
-    </div>
-  </div>
 
-  <footer>
-    <hr>
-    <p>Stay in touch!</p>
-    <a href="https://500px.com/jeffwyma" target="_blank"><i class="fa fa-500px" aria-hidden="true"></i></a>
-    <a href="https://www.flickr.com/photos/jeffrsx231/" target="_blank"><i class="fa fa-flickr" aria-hidden="true"></i></a>    
-    <a href="https://www.instagram.com/jeffw231" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-  </footer>
-
-
-  <script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
-  <script src="../javascript/main.js"></script>
+<script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+<script src="../javascript/main.js"></script>
 
 
 </body>
