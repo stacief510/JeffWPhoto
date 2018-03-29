@@ -1,39 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Jeff Wyma</title>
-    
-    <link href="https://fonts.googleapis.com/css?family=Montaga|Palanquin|Titillium+Web" rel="stylesheet">
-    
-    <link href="styles.css" type="text/css" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <title>Jeff Wyma</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montaga|Palanquin|Titillium+Web" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link href="css/styles.css" type="text/css" rel="stylesheet">
 
-    <link rel="shortcut icon" href="photos/jw.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<div class="background-image toggle-image first-image"> </div>
-<div class="background-image toggle-image second-image"></div>
-<div class="background-image toggle-image third-image"></div>
+  <link rel="shortcut icon" href="#" type="image/x-icon" />
 
-</head> 
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+</head>
 <body id='background'>
   <header>
     <h1>Jeff Wyma Photography</h1>
     <nav>
-		<a href="portfolio.html">Portfolio</a>
-		<a href="clients.html">Clients</a>
-        <a href="about.html">About</a>
-		<a href="#">Contact</a>
-	</nav>
-   </header>
+      <a href="sites/portfolio.html" class="portfolio">Portfolio</a>
+<!--            <div class="dropdown">
+             <a href="#">Cars</a>
+             <a href="#">Weddings</a>
+             <a href="#">Nature</a>
+           </div> -->
+           <a href="sites/clients.html">Clients</a>
+           <a href="sites/about.html">About</a>
+           <a href="#" id="showModal">Contact</a>
+         </nav>
+       </header>
 
-    <footer>
-        <hr>
-        <p>Stay in touch!</p>
-        <a href="https://500px.com/jeffwyma" target="_blank"><i class="fa fa-500px" aria-hidden="true"></i></a>
-        <a href="https://www.flickr.com/photos/jeffrsx231/" target="_blank"><i class="fa fa-flickr" aria-hidden="true"></i></a>    
-        <a href="https://www.instagram.com/jeffw231" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-    </footer>
-</body>
-</html>
+       <img src="photos/winterlaketahoe.jpg" id="img1" alt="laketahoe">
+       <img src="photos/fastm3.jpg" id="img2" alt="m3">
+       <img src="photos/mtdiablo.jpg" id="img3" alt="mtdiablo">
+
+       <div class="modal-background">
+        <div class="modal-content">
+          <form>
+           <button id="close">X</button>
+           <h3>Contact Me</h3>
+           <div class="flexwrap">
+             <label for="name">Name:</label>
+             <input class="input" type="text" placeholder="Name"><br>
+
+             <label for="email">Email Address:</label>
+             <input class="input" type="email" placeholder="Email Address">
+           </div>
+           <br>
+           <textarea name="comment" rows="6" placeholder="Speak At Me!"></textarea>
+           <input class="submit" type="submit">
+         </form>
+         </div>
+         </div>
+
+         <footer class="bottom">
+          <hr>
+          <p>Stay in touch!</p>
+          <a href="https://500px.com/jeffwyma" target="_blank"><i class="fa fa-500px" aria-hidden="true"></i></a>
+          <a href="https://www.flickr.com/photos/jeffrsx231/" target="_blank"><i class="fa fa-flickr" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/jeffw231" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </footer>
+
+        <script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+        <script src="javascript/main.js"></script>
+
+      </body>
+      </html>

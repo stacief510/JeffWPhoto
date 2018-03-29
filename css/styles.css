@@ -1,4 +1,4 @@
-    /* Google Fonts: 
+    /* Google Fonts:
     font-family: 'Titillium Web', sans-serif;
     font-family: 'Palanquin', sans-serif;
     font-family: 'Montaga', serif;*/
@@ -89,7 +89,7 @@
     .modal-background {
       padding: 40px;
       background-color: rgba(0, 0, 0, .5);
-      position: fixed; 
+      position: fixed;
       top: 0px;
       right:0px;
       left: 0px;
@@ -117,7 +117,7 @@
         border-radius: 10px;
         border: 1px solid #b5b5b5;
         width: 15%;
-        
+
     }
 
     .flexwrap{
@@ -243,6 +243,7 @@
     /* footer */
 
     footer {
+        display: flex
         font-family: 'Palanquin', sans-serif;
         right: 0;
         bottom: calc(3%);
@@ -255,6 +256,7 @@
     .bottom{
     bottom: calc(3%);
     position: absolute;
+    margin-top: 100%;
     }
 
     footer p{
@@ -311,4 +313,3 @@
         position: relative;
     }
     }
-
